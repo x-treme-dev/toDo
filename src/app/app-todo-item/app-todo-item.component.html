@@ -1,1 +1,14 @@
-<p>app-todo-item works!</p>
+<div class="card" [ngClass]="{invisible: visibilityOfField}">
+  <p>{{post.text}}</p>
+</div>
+
+<div>
+  <input class = "form-control-special" type="text" [ngClass]="{invisible:visibilityOfInput}">
+</div>
+
+<div  [ngClass] ="{invisible: visibility}">
+  <button class="btn" (click)="changeVisibility()">Редактировать</button>
+  <button class="btn">Удалить</button>
+</div>
+
+

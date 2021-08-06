@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AppTodoListComponent } from './app-todo-list/app-todo-list.component';
 import { AppTodoItemComponent } from './app-todo-item/app-todo-item.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { AppTodoItemComponent } from './app-todo-item/app-todo-item.component';
     AppTodoItemComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+
+export interface Post{
+  text: string
+}
 
 @Component({
   selector: 'app-root',
@@ -6,5 +10,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'toDo';
+
+  posts: Post[] = [
+    {text: 'В 12:00 полить гибискус'}
+  ]
+
+  transitVisibility!: boolean;
+
+  updatePosts(post: Post){
+    this.posts.unshift(post)
+  }
+
+  receiveMessage($event:any){
+    this.transitVisibility = $event
+  }
 }
