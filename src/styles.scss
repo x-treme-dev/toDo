@@ -56,13 +56,19 @@ img {
 .form-control {
   display: block;
   margin-top: 0.3rem;
+  outline: 0 !important;
 }
 
-.form-control-special {
+.form-control-like-card {
   border: #ccc 1px dotted;
   display: block;
-  margin: 0.7rem 0rem;
+  color: #A9A9A9;
   height: 3.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  margin: 0.7rem 0rem;
+  padding: 1rem;
+  outline: 0 !important;
 }
 
 .card {

@@ -12,7 +12,8 @@ export interface Post{
 export class AppComponent {
 
   posts: Post[] = [
-    {text: 'В 12:00 полить гибискус'}
+    {text: 'В 12:00 полить гибискус'},
+    {text: 'В 18:25 выгуливаю хомячка'}
   ]
 
   transitVisibility!: boolean;
